@@ -1,4 +1,4 @@
-FROM centos7
+FROM centos
 MAINTAINER leo
 RUN yum install passwd openssl openssh-server net-tools -y
 RUN ssh-keygen -q -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key -N ''
